@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kumo Koi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap">
+  <script type="module" crossorigin src="./assets/index-CM_KlpwX.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DX7aSj-L.css">
+</head>
+<body>
+<div id="stage" aria-label="Your koi pond. Click a koi to select it."></div>
+
+<div id="app">
+    <header class="topbar">
+        <div class="brand"><span class="brand-name">Kumo Koi</span><span class="brand-kanji" aria-hidden="true">雲鯉</span></div>
+        <div class="clock">
+            <div class="dial" id="dial" aria-hidden="true"><i></i></div>
+            <div class="date"><b id="season">Spring</b> <span id="seasonDay">Day 1</span> <span class="muted" id="year">Year 1</span></div>
+            <div class="speeds" id="speeds" role="group" aria-label="Game speed"></div>
+        </div>
+        <div class="wallet">
+            <div class="money" title="Money"><span class="coin" aria-hidden="true">¥</span><b id="money">¥0</b></div>
+            <div class="feedbox" id="feedBox" title="Feed in the shed">
+                <span aria-hidden="true">🍚</span><b id="feed">0</b><span class="muted small" id="feedNote"></span>
+                <button class="icon-btn small" id="buyFeedBtn" title="Buy feed">+</button>
+            </div>
+        </div>
+        <nav class="topnav">
+            <button class="btn btn--primary" id="marketBtn">Market</button>
+            <button class="btn" id="journalBtn">Journal</button>
+            <button class="btn" id="guideBtn">Varieties</button>
+            <button class="icon-btn" id="helpBtn" title="How to play">?</button>
+            <button class="icon-btn" id="menuBtn" title="Game menu">⋯</button>
+        </nav>
+    </header>
+    <nav class="pond-tabs" id="pondTabs" aria-label="Ponds"></nav>
+    <main class="pond-area" id="pondArea"></main>
+    <aside class="panel" id="panel" aria-label="Pond and koi details"><div class="panel-body" id="panelBody"></div></aside>
+</div>
+
+<div class="heron-alert" id="heronAlert" hidden>
+    <div class="heron-text" id="heronText">A heron!</div>
+    <button class="btn btn--danger" id="heronBtn">Shoo!</button>
+    <div class="heron-meter"><i id="heronBar"></i></div>
+</div>
+
+<div class="inspect" id="inspect" hidden>
+    <div class="inspect-card" id="inspectCard"></div>
+</div>
+
+<div class="fish-tip" id="fishTip" hidden></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<div class="modal" id="modal" hidden></div>
+
+</body>
+</html>
